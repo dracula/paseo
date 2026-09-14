@@ -1,6 +1,6 @@
 ### [Paseo](https://paseo.sh)
 
-Requires Paseo 0.7.2 or later. This theme is a data-only plugin: it registers themes and nothing
+Requires Paseo 0.8.0 or later. Paseo 0.7: install the `v0.7` directory, not the repo root. This theme is a data-only plugin: it registers themes and nothing
 else — no surfaces, commands, RPCs, filesystem, process, or network access. As with all Paseo
 plugins (trusted code), review the source before installing on the daemon host.
 
@@ -16,6 +16,12 @@ Or add it directly from Git:
 
 ```bash
 paseo plugin add dracula/paseo
+```
+
+Paseo 0.7:
+
+```bash
+paseo plugin install /path/to/paseo/v0.7
 ```
 
 #### Install manually

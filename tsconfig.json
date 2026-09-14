@@ -12,5 +12,5 @@
     "types": ["bun"]
   },
   "include": ["**/*.ts"],
-  "exclude": ["feature", "node_modules"]
+  "exclude": ["feature", "node_modules", "v0.7"]
 }

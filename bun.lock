@@ -6,7 +6,7 @@
       "name": "paseo",
       "devDependencies": {
         "@biomejs/biome": "^2.5.10",
-        "@getpaseo/plugin": "^0.7.2",
+        "@getpaseo/plugin": "^0.8.0",
         "@types/bun": "^1.4.0",
         "fflate": "^0.8.3",
         "typescript": "^5.9.3",
@@ -14,6 +14,8 @@
     },
   },
   "packages": {
+    "@agentclientprotocol/sdk": ["@agentclientprotocol/sdk@1.4.0", "", { "peerDependencies": { "zod": "^3.25.0 || ^4.0.0" } }, "sha512-/eufudw+aFY1LKLolT6yFE6UMmYRl7fMJ/DEONSIyR6wI3slHWITBsANRGqXEY8FRzqUxwh7QEaGiZHcJPVThg=="],
+
     "@biomejs/biome": ["@biomejs/biome@2.5.12", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.5.12", "@biomejs/cli-darwin-x64": "2.5.12", "@biomejs/cli-linux-arm64": "2.5.12", "@biomejs/cli-linux-arm64-musl": "2.5.12", "@biomejs/cli-linux-x64": "2.5.12", "@biomejs/cli-linux-x64-musl": "2.5.12", "@biomejs/cli-win32-arm64": "2.5.12", "@biomejs/cli-win32-x64": "2.5.12" }, "bin": { "biome": "bin/biome" } }, "sha512-Lw4VHZRebrReBBnlHa12JQjnIBm3JJAA55PDB9LbBVBF0q4RYphm6KfmIjqtPhf61MxZ5Q9KoK8R8x+7per5Aw=="],
 
     "@biomejs/cli-darwin-arm64": ["@biomejs/cli-darwin-arm64@2.5.12", "", { "os": "darwin", "cpu": "arm64" }, "sha512-lCRY1rwgNeWNgTr4DI/u6ZwXTRwRLHAvbaio1YLLGS+4r1nhvB2ssyPqIpfUSmRveNfv0fn/N58C7CAdK2XVrg=="],
@@ -34,7 +36,7 @@
 
     "@getpaseo/client": ["@getpaseo/client@0.7.2", "", { "dependencies": { "@getpaseo/protocol": "0.7.2", "@getpaseo/relay": "0.7.2", "zod": "^4.4.3" } }, "sha512-BD3uNBdp4wz79uDIJPYqAnaLXbMlZ1V/Nb9RFv0cEUcrFzk0kKAQ1NOaquD3Lz4MUJFTR8Eh/VxJB+OlbHSsiQ=="],
 
-    "@getpaseo/plugin": ["@getpaseo/plugin@0.7.2", "", { "dependencies": { "use-sync-external-store": "^1.6.0" }, "peerDependencies": { "@getpaseo/client": "0.7.2", "@getpaseo/protocol": "0.7.2", "react": "19.1.0", "zod": "^4.4.3" } }, "sha512-uOhaMdxqgIkETjw+yAGRyZ84yJrpb1ECwBRj9f6cSNHeUwNj/1ohwa/oCfmdnoiX57s3oYYkY+7uE8bUy2Q/Fg=="],
+    "@getpaseo/plugin": ["@getpaseo/plugin@0.8.0", "", { "dependencies": { "@agentclientprotocol/sdk": "^1.4.0", "use-sync-external-store": "^1.6.0" }, "peerDependencies": { "@getpaseo/client": "0.8.0", "@getpaseo/protocol": "0.8.0", "react": "~19.1.0", "react-native": ">=0.81.5", "zod": "^4.4.3" }, "optionalPeers": ["react-native"] }, "sha512-VWdqMuYhv6oVrbNr+phDkSkMd4qfjb55UkFB0S4u4sHgo66UtJwvn8U9bwp1zU5wktW2LdXEa4OpcEGFDSkdVw=="],
 
     "@getpaseo/protocol": ["@getpaseo/protocol@0.7.2", "", { "dependencies": { "zod": "^4.4.3" } }, "sha512-bLegKuZIqO34Az8eKi0y3W0CcwwICipd7s4iFOUdOAiMwUYybzyXEpVaxuMcSzstNAtGqP+FMRteljFXAJ8T8w=="],
 
