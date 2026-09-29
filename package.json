@@ -1,10 +1,37 @@
 {
-  "name": "paseo",
-  "private": true,
-  "version": "0.0.0",
-  "description": "Dracula and Alucard app themes for Paseo.",
-  "license": "MIT",
+  "name": "@omercnet/paseo-dracula",
+  "version": "0.1.0",
   "type": "module",
+  "description": "Dracula Classic and Alucard Classic themes for Paseo.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dracula/paseo.git"
+  },
+  "homepage": "https://github.com/dracula/paseo#readme",
+  "bugs": {
+    "url": "https://github.com/dracula/paseo/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "paseo",
+    "paseo-plugin",
+    "dracula",
+    "theme",
+    "color-scheme"
+  ],
+  "files": [
+    "index.client.ts",
+    "paseo-plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "check": "biome check .",
     "check:write": "biome check --write .",
@@ -15,7 +42,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.10",
-    "@getpaseo/plugin": "^0.8.0",
+    "@getpaseo/plugin": "^0.9.0",
     "@types/bun": "^1.4.0",
     "fflate": "^0.8.3",
     "typescript": "^5.9.3"

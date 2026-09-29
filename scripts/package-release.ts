@@ -4,22 +4,14 @@ import { zipSync } from "fflate";
 import packageJson from "../package.json";
 
 const releaseFiles = [
-  "bun.lock",
-  "CHANGELOG.md",
   "LICENSE",
-  "INSTALL.md",
   "README.md",
   "index.client.ts",
-  "v0.7/index.ts",
-  "v0.7/paseo-plugin.json",
   "package.json",
   "paseo-plugin.json",
-  "tsconfig.json",
-  "screenshot/agent.png",
-  "screenshot/settings.png",
 ] as const;
 
-const output = Bun.argv[2] ?? `dist/paseo-v${packageJson.version}.zip`;
+const output = process.argv[2] ?? `dist/paseo-v${packageJson.version}.zip`;
 const root = "paseo";
 const files: Record<string, Uint8Array> = {};
 

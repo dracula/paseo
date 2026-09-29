@@ -3,7 +3,7 @@
   "packages": {
     ".": {
       "release-type": "node",
-      "package-name": "paseo",
+      "package-name": "paseo-dracula",
       "include-component-in-tag": false,
       "initial-version": "0.1.0"
     }
