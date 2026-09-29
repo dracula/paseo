@@ -6,14 +6,14 @@ export default function contribute(client: PluginClientContext) {
     name: "Dracula",
     appearance: "dark",
     colors: {
-      background: "#21222C", // main bg
-      foreground: "#F8F8F2", // primary text + terminal fg/cursor
-      raised: "#343746", // cards / popovers / hover
-      control: "#282A36", // inputs / secondary fills
-      border: "#6272A4", // borders + highest surface tint (visible)
-      accent: "#BD93F9", // buttons / selection / focus
-      mutedForeground: "#FFFFFF", // secondary text
-      ring: "#BD93F9", // focus rings + scrollbars + terminal bright black
+      background: "#282A36",
+      foreground: "#F8F8F2",
+      raised: "#343746",
+      control: "#44475A",
+      border: "#424450",
+      accent: "#BD93F9",
+      mutedForeground: "#F8F8F2",
+      ring: "#6272A4",
     },
   });
 

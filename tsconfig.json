@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2024",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "lib": ["ES2023"],
+    "lib": ["ES2024"],
     "strict": true,
     "skipLibCheck": true,
     "noEmit": true,
@@ -12,5 +12,5 @@
     "types": ["bun"]
   },
   "include": ["**/*.ts"],
-  "exclude": ["feature", "node_modules", "v0.7"]
+  "exclude": ["node_modules", "dist"]
 }

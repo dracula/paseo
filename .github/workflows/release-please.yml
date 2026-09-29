@@ -16,6 +16,7 @@ jobs:
     permissions:
       contents: write # Creates tags, GitHub releases, and release assets.
       pull-requests: write # Creates and updates the Release Please pull request.
+      id-token: write # Request OIDC token for npm publishing.
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -51,3 +52,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ steps.release.outputs.tag_name }}
         run: gh release upload "$RELEASE_TAG" "dist/paseo-$RELEASE_TAG.zip" --clobber
+      - name: Set up Node
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+      - name: Pack npm artifact
+        if: ${{ steps.release.outputs.release_created }}
+        run: bun pm pack --ignore-scripts --filename "$RUNNER_TEMP/package.tgz"
+      - name: Publish to npm
+        if: ${{ steps.release.outputs.release_created }}
+        run: npm publish "$RUNNER_TEMP/package.tgz"
