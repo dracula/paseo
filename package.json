@@ -1,7 +1,7 @@
 {
   "name": "paseo",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Dracula and Alucard app themes for Paseo.",
   "license": "MIT",
   "type": "module",
